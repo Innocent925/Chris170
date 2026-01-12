@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #2c2c2c;
+    backdrop-filter: blur(10px);
+}
+.Logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+.Logo img{
+    max-width: 120px;
+    height: auto;
+}
+.Logo:hover{
+    color: #f83505;
+    transform: scale(1.1);
+}
+.navmenu{
+    display: flex;
+
+}
+.navmenu a{
+    color:white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 500px;
+    transition: 3s;
+}
+.navmenu a::after{
+    content: "";
+    width: 0%;
+    background-color: #f83505;
+    height: 2px;
+    display: block;
+    transition: width 0.3s;
+    
+    
+}
+.navmenu a:hover::after{
+    width: 100%;
+    margin-left: 10px;
+}
+ul li{
+    font-weight: bold;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+}
+.nav-icons i{
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400px;
+    transition: 3s;
+}
+.nav-icons:hover{
+    transform: scale(1.1);
+    color: #f83505;
+}
+#menu-icon{
+    font-size: 35px;
+    color: white;
+    z-index: 1000px;
+    cursor: pointer;
+
+}
+.Sec1{
+    
+    
+    margin-top: 100px;
+    padding: 8rem 5%;
+    background-color: black;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+#p1{
+    color: white;
+    font-weight: 600;
+}
+#p2{
+    color: #f83505;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: cursive;
+}
+.Products{
+    padding: 5rem ;
+    background: linear-gradient(45deg, #2d3436, #1a1a1a);
+}
+.Product-grid{
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-gap:2.5rem ;
+
+
+}
+.Product-card{
+    background: var(--dark-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+#img1{
+    margin-left: -55px;
+}
+p{
+    color: white;
+}
+
+
+
+
